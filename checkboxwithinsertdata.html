@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <form>
+        <select name="cars" id="cars">
+            <legend>Select your favourite car brand</legend>
+                <!-- <option disabled selected value=""></option> -->
+                <option value="Audi"> Audi </option>
+                <option value="Mercedes"> Mercedes </option>
+                <option value="BMW"> BMW </option>
+        </select>
+
+        <label for="submit">
+            <input type="button" id="submit" value="submit" onclick="getSelectedValue()">
+        </label>
+
+        <!-- <input type="text" id="insertcar" value="">
+        <label for="addcar">
+            <input type="button" id="addcar" value="Add Car" onclick="addCar()">
+        </label> -->
+    </form>
+
+    <script src="checkboxwithinsertdata.js"></script>
+</body>
+</html>

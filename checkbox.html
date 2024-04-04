@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <form>
+        <select name="subject" id="subject">
+            <legend>Select your favourite subject</legend>
+                <!-- <option disabled selected value=""></option> -->
+                <option value="Web"> Web </option>
+                <option value="Data Science"> Data Science </option>
+                <option value="Database"> Database </option>
+        </select>
+
+        <label for="submit">
+            <input type="button" id="submit" value="submit" onclick="getSelectedValue()">
+        </label>
+    </form>
+
+    <script src="checkbox.js"></script>
+</body>
+</html>
