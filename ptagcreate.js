@@ -1,19 +1,23 @@
 
 function checkuserinput(){
     userinput = +document.getElementById("userinput").value;
-    
-    factorsfromuserdata = document.getElementById("factorsfromuserdata");
 
     numberoffactors = document.getElementById("numberoffactors");
 
     isnumberprime = document.getElementById("isnumberprime");
+
+    newparagraph = document.createElement("p");
+
+    document.getElementById("paradiv").appendChild(newparagraph);
+
+    newparagraph.setAttribute("id", "factorpara");
 
     let amtoffactors = 0;
     for(let i=1;i<=userinput;i++)
     {
         if (userinput%i == 0)
         {
-            factorsfromuserdata.value += (i) + "\n" ;
+            document.getElementById('factorpara').innerHTML += "<li>" + (i) + "</li>"  ;
             amtoffactors += 1; 
         }
         numberoffactors.value = amtoffactors;
@@ -33,10 +37,7 @@ function clearuserinput(){
     
     document.getElementById("userinput").value = "";
 
-    document.getElementById("factorsfromuserdata").value = "";
-
     document.getElementById("numberoffactors").value = "";
 
     document.getElementById("isnumberprime").value = "";
-
 }

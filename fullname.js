@@ -4,14 +4,11 @@ function updatedata(){
 
 
     let data = document.getElementById("fullname").value;
-    console.log(data);
     
-    
-    let textinner = document.getElementById("paragraph").innerText = data;
-    let texthtml = document.getElementById("paragraph").innerHTML;
+    document.getElementById("paragraph").innerText = data;
+    // document.getElementById("paragraph").innerHTML = data;
 
-    console.log(texthtml);
-    console.log(textinner);
+
 }
 
 function clickthis(){
