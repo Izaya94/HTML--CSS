@@ -71,7 +71,11 @@ function buttonclick(e) {
         cell8.disabled = true;
         cell9.disabled = true;
         return;
-
+    }
+    else if (cell1.disabled == true && cell2.disabled == true && cell3.disabled == true && cell4.disabled == true && cell5.disabled == true && cell6.disabled == true && cell7.disabled == true && cell8.disabled == true && cell9.disabled == true)
+    {
+        alert('Draw');
+        return;
     }
 
     computerStep();
@@ -140,12 +144,14 @@ function computerStep() {
         cell9.disabled = true;
         return;
     }
-
-
+    else if (cell1.disabled == true && cell2.disabled == true && cell3.disabled == true && cell4.disabled == true && cell5.disabled == true && cell6.disabled == true && cell7.disabled == true && cell8.disabled == true && cell9.disabled == true)
+    {
+        alert('Draw');
+        return;
+    }
 }
 
 function reset1(){
-
 
     topcells = document.getElementById('top');
     midcells = document.getElementById('mid');
@@ -154,6 +160,8 @@ function reset1(){
     topchildren = topcells.children;
     midchildren = midcells.children;
     botchildren = botcells.children;
+
+    step = 1;
 
     for( let i = 0; i < topchildren.length ; i++ ) {
         topchildren[i].disabled = false;
@@ -171,6 +179,6 @@ function reset1(){
         botchildren[i].innerHTML = '_';
     }
 
-    count = 0;
+    countnumber = 0;
 
 } 

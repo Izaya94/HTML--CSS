@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    .center-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .button-container {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container center-image">
+
+    <img src="/img/dragon_slayer_by_slimshadywallpaper_dha20vg-pre.jpg" id="image1">
+
+    <img src="/img/scenery_by_xavcovert_dha03hu-pre.jpg" hidden id="image2">
+
+    <img src="img/scenery_by_xavcovert_dha03q5-pre.jpg" hidden id="image3">
+
+    <div class="button-container">
+      <button class="btn btn-primary" onclick="changeimage()">Next</button>
+    </div>
+
+  </div>
+  <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="imgswap.js"></script>
+</body>
+
+</html>
